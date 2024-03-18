@@ -144,7 +144,6 @@ accuracy, report = evaluate_model(model, X_test, y_test)
 print(f"Accuracy Score: {accuracy}")
 print("Classification Report:")
 print(report)
-'''
 
 ```
 python main.py
