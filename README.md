@@ -8,32 +8,32 @@ Project Organization
 
 Churnprediction/
 │
-├── README.md          # Project overview and instructions.
+├── README.md # Project overview and instructions.
 │
-├── data/              # Where data is stored.
-│   ├── raw/           # The original, immutable data dump.
-│   ├── interim/       # Intermediate data that has been transformed.
-│   └── processed/     # The final, canonical datasets for modeling.
-|
-├── notebooks/         # Jupyter notebooks for exploration and presentation.
-|   ├── 01_exploratory_data_analysis.ipynb
-|   ├── 02_data_preparation_and_feature_engineering.ipynb
-|   └── 03_modeling_and_evaluation.ipynb
+├── data/ # Where data is stored.
+│ ├── raw/ # The original, immutable data dump.
+│ ├── interim/ # Intermediate data that has been transformed.
+│ └── processed/ # The final, canonical datasets for modeling.
 │
-├── reports/           # Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures/       # Generated graphics and figures to be used in reporting.
-|
-├── requirements.txt   # The requirements file for reproducing the analysis environment.
-|
+├── notebooks/ # Jupyter notebooks for exploration and presentation.
+│ ├── 01_exploratory_data_analysis.ipynb
+│ ├── 02_data_preparation_and_feature_engineering.ipynb
+│ └── 03_modeling_and_evaluation.ipynb
+│
+├── reports/ # Generated analysis as HTML, PDF, LaTeX, etc.
+│ └── figures/ # Generated graphics and figures to be used in reporting.
+│
+├── requirements.txt # The requirements file for reproducing the analysis environment.
+│
 ├── churn_predictor/
-|   ├── __init__.py
-|   ├── data_preparation.py     # Contains code for loading the dataset, handling missing values, and splitting the data.
-|   ├── feature_engineering.py  # Handles encoding of categorical variables and any necessary feature transformation.
-|   ├── model_training.py       # Contains the initialization and training of the machine learning model, Random Forest Classifier, along with model evaluation.
-|   ├── predict.py              # Utilized for making predictions on new data using the trained model.
-|   └── visualization.py        # Contains functions for visualizing model performance and feature importances.
-|
-└── tox.ini            # tox file with settings for running tox; see tox.testrun.org
+│ ├── init.py
+│ ├── data_preparation.py # Contains code for loading the dataset, handling missing values, and splitting the data.
+│ ├── feature_engineering.py # Handles encoding of categorical variables and any necessary feature transformation.
+│ ├── model_training.py # Contains the initialization and training of the machine learning model, Random Forest Classifier, along with model evaluation.
+│ ├── predict.py # Utilized for making predictions on new data using the trained model.
+│ └── visualization.py # Contains functions for visualizing model performance and feature importances.
+│
+└── tox.ini # tox file with settings for running tox; see tox.testrun.org
 
 
 --------
@@ -109,7 +109,6 @@ While it's recommended to explore individual scripts for granular control over t
 
 
 ### Running the Project
-To run the project, execute the `main.py` script. This will perform data preparation, feature engineering, model training, and evaluation in sequence.
 
 main.py file :
 
@@ -144,6 +143,8 @@ accuracy, report = evaluate_model(model, X_test, y_test)
 print(f"Accuracy Score: {accuracy}")
 print("Classification Report:")
 print(report)
+
+### To run the project, execute the `main.py` script. This will perform data preparation, feature engineering, model training, and evaluation in sequence.
 
 ```
 python main.py
