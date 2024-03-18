@@ -146,6 +146,4 @@ Contributions are welcome! Please read the contribution guidelines for more info
 - Kishorekumar(kishorekumarmourougane@gmail.com)
 
 Thank you for using Churn Predictor for your customer churn analysis needs!
-```
 
-This Markdown file provides a detailed README for the churn prediction project, including project overview, setup instructions, usage guidelines, and contribution information.
