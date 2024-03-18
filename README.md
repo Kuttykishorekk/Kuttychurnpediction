@@ -113,7 +113,7 @@ To run the project, execute the `main.py` script. This will perform data prepara
 
 main.py file :
 
-'''python
+```python
 # Pretend this is main.py
 from KuttyChurn.data_preparation import load_data
 from KuttyChurn.data_preparation import impute_missing_values
