@@ -1,3 +1,8 @@
+Package Name: kuttychurn
+Version: 0.1.0
+Author: kishorekumar
+Email: kishore.mourougane@epita.fr
+
 # Kutty's Churn-Prediction
 =======
 
