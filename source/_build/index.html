@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Welcome to Kutty’s Churn Prediction’s documentation! &#8212; Kutty&#39;s Churn Prediction 0.1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=039e1c02" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=2389946f"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="welcome-to-kutty-s-churn-prediction-s-documentation">
+<h1>Welcome to Kutty’s Churn Prediction’s documentation!<a class="headerlink" href="#welcome-to-kutty-s-churn-prediction-s-documentation" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this heading">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+<section id="churn-prediction">
+<h1>Churn Prediction<a class="headerlink" href="#churn-prediction" title="Permalink to this heading">¶</a></h1>
+<section id="project-overview">
+<h2>Project Overview<a class="headerlink" href="#project-overview" title="Permalink to this heading">¶</a></h2>
+<p>This project aims to predict customer churn for an E-Commerce platform. Using machine learning techniques, specifically Random Forest Classifier, we analyze customer behavior and other relevant features to identify patterns that indicate the likelihood of churn.</p>
+</section>
+<section id="setup-and-installation">
+<h2>Setup and Installation<a class="headerlink" href="#setup-and-installation" title="Permalink to this heading">¶</a></h2>
+<p>Ensure you have Python installed on your system. This project is built using Python 3.8 or higher.</p>
+<ol class="arabic simple">
+<li><p>Clone the repository to your local machine.</p></li>
+<li><p>Navigate into the project directory.</p></li>
+<li><p>Install the required packages using the <cite>requirements.txt</cite> file provided in the project directory.</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</pre></div>
+</div>
+<p>The Python version used is 3.9.17. Based on the analysis and model building steps performed in the project, the <cite>requirements.txt</cite> file should include the following packages:</p>
+<ul class="simple">
+<li><p>numpy</p></li>
+<li><p>pandas</p></li>
+<li><p>scikit-learn</p></li>
+<li><p>matplotlib</p></li>
+<li><p>openpyxl</p></li>
+<li><p>xlrd</p></li>
+</ul>
+</section>
+<section id="data">
+<h2>Data<a class="headerlink" href="#data" title="Permalink to this heading">¶</a></h2>
+<p>The dataset, “E Commerce Dataset.xlsx”, consists of various customer attributes and their interaction with the E-Commerce platform. Key features include CustomerID, Churn, Tenure, PreferredLoginDevice, CityTier, and many more.</p>
+</section>
+<section id="kuttychurn-package">
+<h2>KuttyChurn Package<a class="headerlink" href="#kuttychurn-package" title="Permalink to this heading">¶</a></h2>
+<p>KuttyChurn is a Python package developed for predicting customer churn in E-commerce datasets. It encompasses a comprehensive workflow from data preparation to model evaluation and prediction, allowing users to efficiently process data, train machine learning models, and visualize important features influencing customer retention.</p>
+</section>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">¶</a></h2>
+<p>Clone this repository to your local machine using:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/Kuttykishorekk/Kuttychurnprediction.git
+</pre></div>
+</div>
+<p>Navigate to the project directory and install the package using pip:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>KuttyChurn
+pip<span class="w"> </span>install<span class="w"> </span>.
+</pre></div>
+</div>
+<p>OR</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>kuttychurn
+</pre></div>
+</div>
+</section>
+<section id="components">
+<h2>Components<a class="headerlink" href="#components" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">data_preparation.py</span></code>: Script for loading and initially cleaning the raw E-commerce dataset.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">feature_engineering.py</span></code>: Contains methods for feature extraction and preprocessing, ensuring data is suitable for model training.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">model_training.py</span></code>: Facilitates the training of machine learning models using the preprocessed data, with a focus on Random Forest Classifier.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">predict.py</span></code>: Provides functionality for making predictions on new data using the trained model.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">visualization.py</span></code>: Offers several plotting functions to visualize the data distribution, model metrics, and feature importances.</p></li>
+</ul>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this heading">¶</a></h2>
+<p>While it’s recommended to explore individual scripts for granular control over the process, the package is designed to be used as follows:</p>
+<ol class="arabic simple">
+<li><p>Prepare your dataset using the <code class="docutils literal notranslate"><span class="pre">data_preparation</span></code> module.</p></li>
+<li><p>Employ the <code class="docutils literal notranslate"><span class="pre">feature_engineering</span></code> module to process your dataset further.</p></li>
+<li><p>Train your model with the <code class="docutils literal notranslate"><span class="pre">model_training</span></code> module.</p></li>
+<li><p>Use the <code class="docutils literal notranslate"><span class="pre">predict</span></code> module for making predictions.</p></li>
+<li><p>Visualize your model’s performance using the <code class="docutils literal notranslate"><span class="pre">visualization</span></code> module.</p></li>
+</ol>
+</section>
+<section id="running-the-project">
+<h2>Running the Project<a class="headerlink" href="#running-the-project" title="Permalink to this heading">¶</a></h2>
+<p>To run the project, execute the <code class="docutils literal notranslate"><span class="pre">main.py</span></code> script. This will perform data preparation, feature engineering, model training, and evaluation in sequence.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>main.py
+</pre></div>
+</div>
+</section>
+<section id="contributing">
+<h2>Contributing<a class="headerlink" href="#contributing" title="Permalink to this heading">¶</a></h2>
+<p>Contributions to this project are welcome. Please ensure to follow best practices for code quality and consistency.</p>
+</section>
+<section id="license">
+<h2>LICENSE<a class="headerlink" href="#license" title="Permalink to this heading">¶</a></h2>
+<p>For the MIT license, the contents would be as follows:</p>
+<section id="mit-license">
+<h3>MIT License<a class="headerlink" href="#mit-license" title="Permalink to this heading">¶</a></h3>
+<p>Copyright (c) 2024 Kishorekumar</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</p>
+</section>
+<section id="contribution">
+<h3>Contribution<a class="headerlink" href="#contribution" title="Permalink to this heading">¶</a></h3>
+<p>Contributions are welcome! Please read the contribution guidelines for more information.</p>
+</section>
+<section id="authors">
+<h3>Authors<a class="headerlink" href="#authors" title="Permalink to this heading">¶</a></h3>
+<p>Kishorekumar(<a class="reference external" href="mailto:kishorekumarmourougane&#37;&#52;&#48;gmail&#46;com">kishorekumarmourougane<span>&#64;</span>gmail<span>&#46;</span>com</a>)</p>
+<p>Thank you for using Churn Predictor for your customer churn analysis needs!</p>
+</section>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">Kutty's Churn Prediction</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2024, Kishorekumar.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

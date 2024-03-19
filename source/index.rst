@@ -1,0 +1,146 @@
+.. Kutty's Churn Prediction documentation master file, created by
+   sphinx-quickstart on Tue Mar 19 16:19:25 2024.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to Kutty's Churn Prediction's documentation!
+====================================================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
+Churn Prediction
+===============
+
+Project Overview
+----------------
+This project aims to predict customer churn for an E-Commerce platform. Using machine learning techniques, specifically Random Forest Classifier, we analyze customer behavior and other relevant features to identify patterns that indicate the likelihood of churn.
+
+Setup and Installation
+----------------------
+Ensure you have Python installed on your system. This project is built using Python 3.8 or higher.
+
+1. Clone the repository to your local machine.
+2. Navigate into the project directory.
+3. Install the required packages using the `requirements.txt` file provided in the project directory.
+
+.. code-block:: bash
+
+    pip install -r requirements.txt
+
+The Python version used is 3.9.17. Based on the analysis and model building steps performed in the project, the `requirements.txt` file should include the following packages:
+
+- numpy
+- pandas
+- scikit-learn
+- matplotlib
+- openpyxl
+- xlrd
+
+Data
+----
+The dataset, "E Commerce Dataset.xlsx", consists of various customer attributes and their interaction with the E-Commerce platform. Key features include CustomerID, Churn, Tenure, PreferredLoginDevice, CityTier, and many more.
+
+KuttyChurn Package
+-------------------
+KuttyChurn is a Python package developed for predicting customer churn in E-commerce datasets. It encompasses a comprehensive workflow from data preparation to model evaluation and prediction, allowing users to efficiently process data, train machine learning models, and visualize important features influencing customer retention.
+
+Installation
+------------
+
+Clone this repository to your local machine using:
+
+.. code-block:: bash
+
+    git clone https://github.com/Kuttykishorekk/Kuttychurnprediction.git
+
+Navigate to the project directory and install the package using pip:
+
+.. code-block:: bash
+
+    cd KuttyChurn
+    pip install .
+
+OR
+
+.. code-block:: bash
+
+   pip install kuttychurn
+
+Components
+----------
+- ``data_preparation.py``: Script for loading and initially cleaning the raw E-commerce dataset.
+- ``feature_engineering.py``: Contains methods for feature extraction and preprocessing, ensuring data is suitable for model training.
+- ``model_training.py``: Facilitates the training of machine learning models using the preprocessed data, with a focus on Random Forest Classifier.
+- ``predict.py``: Provides functionality for making predictions on new data using the trained model.
+- ``visualization.py``: Offers several plotting functions to visualize the data distribution, model metrics, and feature importances.
+
+Usage
+-----
+
+While it's recommended to explore individual scripts for granular control over the process, the package is designed to be used as follows:
+
+1. Prepare your dataset using the ``data_preparation`` module.
+2. Employ the ``feature_engineering`` module to process your dataset further.
+3. Train your model with the ``model_training`` module.
+4. Use the ``predict`` module for making predictions.
+5. Visualize your model's performance using the ``visualization`` module.
+
+Running the Project
+--------------------
+To run the project, execute the ``main.py`` script. This will perform data preparation, feature engineering, model training, and evaluation in sequence.
+
+.. code-block:: bash
+
+    python main.py
+
+Contributing
+------------
+Contributions to this project are welcome. Please ensure to follow best practices for code quality and consistency.
+
+LICENSE
+-------
+For the MIT license, the contents would be as follows:
+
+MIT License
+~~~~~~~~~~~
+
+Copyright (c) 2024 Kishorekumar
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Contribution
+~~~~~~~~~~~~
+Contributions are welcome! Please read the contribution guidelines for more information.
+
+Authors
+~~~~~~~
+Kishorekumar(kishorekumarmourougane@gmail.com)
+
+Thank you for using Churn Predictor for your customer churn analysis needs!
