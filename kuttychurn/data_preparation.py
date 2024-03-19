@@ -2,9 +2,11 @@ import pandas as pd
 from sklearn.impute import SimpleImputer
 from sklearn.model_selection import train_test_split
 
+
 # Load the E-Commerce Dataset
 def load_data(filepath):
     return pd.read_excel(filepath)
+
 
 # Handle missing values
 def impute_missing_values(data, strategy='mean'):
@@ -12,6 +14,7 @@ def impute_missing_values(data, strategy='mean'):
     numerical_columns = data.select_dtypes(include=['float64', 'int64']).columns
     data[numerical_columns] = imputer.fit_transform(data[numerical_columns])
     return data
+
 
 # Data splitting
 def split_data(data, target_column, test_size=0.3, random_state=42):

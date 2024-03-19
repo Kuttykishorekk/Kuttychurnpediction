@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+
 def plot_feature_importance(model, feature_names):
     """Plot the feature importance of the model."""
     feature_importance = model.feature_importances_
