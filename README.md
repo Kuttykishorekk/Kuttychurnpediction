@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 # Kutty's Churn-Prediction
 =======
-# churn-prediction
->>>>>>> origin/main
 
 ## Project Overview
 This project aims to predict customer churn for an E-Commerce platform. Using machine learning techniques, specifically Random Forest Classifier, we analyze customer behavior and other relevant features to identify patterns that indicate the likelihood of churn.
@@ -52,13 +49,11 @@ pip install .
 ```
 or
 
-<<<<<<< HEAD
 ```bash
 pip install kuttychurn
 ```
 
 =======
->>>>>>> origin/main
 ### Components
 
 - `data_preparation.py`: Script for loading and initially cleaning the raw E-commerce dataset.
