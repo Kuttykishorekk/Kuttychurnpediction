@@ -38,7 +38,7 @@ KuttyChurn is a Python package developed for predicting customer churn in E-comm
 Clone this repository to your local machine using:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Kuttykishorekk/Kuttychurnprediction.git
 ```
 
 Navigate to the project directory and install the package using pip:
