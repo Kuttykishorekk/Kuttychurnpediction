@@ -1,0 +1,9 @@
+name: ChurnPrediction
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      data_file: {type: str, default: 'ecommerce_data.csv'}
+    command: "python predict.py {data_file}"

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/kutty/Desktop/github%20project/churnpediction/mlruns/184263391567962105/6354ea3bc2da4e0fa86e994cf73f2494/artifacts
+end_time: 1711012558389
+entry_point_name: ''
+experiment_id: '184263391567962105'
+lifecycle_stage: active
+run_id: 6354ea3bc2da4e0fa86e994cf73f2494
+run_name: RandomForest Base Model
+run_uuid: 6354ea3bc2da4e0fa86e994cf73f2494
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711012541101
+status: 3
+tags: []
+user_id: kutty

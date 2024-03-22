@@ -1,0 +1,14 @@
+name: KuttyChurnPredictionEnv
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - jupyter
+  - pip
+  - pip:
+      - mlflow
