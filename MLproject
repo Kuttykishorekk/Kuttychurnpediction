@@ -1,9 +1,9 @@
-name: ChurnPrediction
+name: Kutty's ChurnPrediction
 
 conda_env: conda.yaml
 
 entry_points:
   main:
     parameters:
-      data_file: {type: str, default: 'ecommerce_data.csv'}
+      data_file: {type: str, default: 'ecommerce_data_imputed_encoded.csv'}
     command: "python predict.py {data_file}"

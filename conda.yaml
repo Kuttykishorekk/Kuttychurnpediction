@@ -1,4 +1,4 @@
-name: KuttyChurnPredictionEnv
+name: Kutty's ChurnPredictionEnv
 channels:
   - defaults
 dependencies:
