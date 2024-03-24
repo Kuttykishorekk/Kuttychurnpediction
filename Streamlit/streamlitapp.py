@@ -4,7 +4,7 @@ import pickle
 import streamlit as st
 
 # app = Flask(__name__)
-model = pickle.load(open('logisticregression.pkl','rb')) 
+model = pickle.load(open('/home/kutty/Desktop/github project/churnpediction/Streamlit/models/randomforest.pkl','rb')) 
 
 # @app.route('/')
 # def home():
