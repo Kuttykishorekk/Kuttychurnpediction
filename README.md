@@ -4,7 +4,7 @@ Author: kishorekumar
 Email: kishore.mourougane@epita.fr
 
 # Kutty's Churn-Prediction
-=========================================================================================================
+=========================================================================================
 
 ## Project Overview
 This project aims to predict customer churn for an E-Commerce platform. Using machine learning techniques, specifically Random Forest Classifier, we analyze customer behavior and other relevant features to identify patterns that indicate the likelihood of churn.
