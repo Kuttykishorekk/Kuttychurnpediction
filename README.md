@@ -58,7 +58,7 @@ or
 pip install kuttychurn
 ```
 
-=====================================================================================================================================
+=====================================================================================================
 ### Components
 
 - `data_preparation.py`: Script for loading and initially cleaning the raw E-commerce dataset.
@@ -71,7 +71,7 @@ pip install kuttychurn
 
 While it's recommended to explore individual scripts for granular control over the process, the package is designed to be used as follows:
 
-1. Prepare your dataset using the `data_preparation` module.
+1. Prepare your dataset using the `data_preparation` module. 
 2. Employ the `feature_engineering` module to process your dataset further.
 3. Train your model with the `model_training` module.
 4. Use the `predict` module for making predictions.
@@ -117,6 +117,55 @@ To run the project, execute the `main.py` script. This will perform data prepara
 ```bash
 python main.py
 ```
+
+==================================================================================================
+
+# Flask API Deployment on AWS EC2
+
+This project demonstrates the implementation of a Flask API and its deployment to the cloud using Amazon Web Services (AWS) Elastic Compute Cloud (EC2) instances.
+
+## Overview
+
+The project consists of the following components:
+
+1. **Flask API**: The main Python script for the Flask API is `app.py`. This script defines API endpoints and handles incoming HTTP requests.
+
+2. **Deployment Script**: A deployment script (`deploy.sh`) is provided to automate the deployment process. It includes instructions for setting up the EC2 instance, transferring the Flask API files, and running the API server.
+
+3. **Requirements**: The `requirements.txt` file lists all Python dependencies required to run the Flask API.
+
+## Deployment Steps
+
+Follow these steps to deploy the Flask API to an AWS EC2 instance:
+
+1. **Launch EC2 Instance**: Log in to your AWS Management Console and launch a new EC2 instance. Make sure to choose an instance type suitable for your application's requirements.
+
+2. **Security Group Configuration**: Configure security groups to allow inbound traffic on port 80 (HTTP) or any other port you intend to use for accessing the Flask API.
+
+3. **SSH Access**: Connect to your EC2 instance using SSH. You can use a command similar to the following:
+   
+   ```bash
+   ssh -i kutty.pem ec2-user@kutty-churn
+   ```
+
+4. **Clone Repository**: Clone your project repository onto the EC2 instance using Git or transfer the files manually.
+
+5. **Install Dependencies**: Navigate to the project directory and install Python dependencies using pip:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+6. **Run Flask API**: Start the Flask API server by running the following command:
+
+   ```bash
+   python app.py
+   ```
+
+   Alternatively, you can use tools like `screen` or `tmux` to run the server in the background.
+
+7. **Access API**: Once the Flask API is running, you can access it using the public IP address or domain name of your EC2 instance, along with the appropriate port (e.g., `http://kutty-churn:5001`).
+
 
 ### Contributing
 Contributions to this project are welcome. Please ensure to follow best practices for code quality and consistency.
