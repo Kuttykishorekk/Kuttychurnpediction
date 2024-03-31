@@ -58,7 +58,7 @@ or
 pip install kuttychurn
 ```
 
-=========================================================================================
+========================================================================================
 ### Components
 
 - `data_preparation.py`: Script for loading and initially cleaning the raw E-commerce dataset.
